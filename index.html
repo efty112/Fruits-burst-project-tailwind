@@ -14,6 +14,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
 
+    <!-- Link to Font Awesome -->
+    <script src="https://kit.fontawesome.com/a9d5eff94b.js" crossorigin="anonymous"></script>
     <!-- Custom Styles -->
     <style>
         * {
@@ -232,7 +234,628 @@
         <!-- Carousel / Slider Part Ends-->
     </header>
 
-    <main>
+    <main class="container mx-auto">
+
+        <!-- Deal of the Day Section Starts-->
+        <section
+            class="flex flex-col text-center lg:flex-row lg:text-justify items-center justify-center lg:mt-52 lg:justify-between">
+            <!-- Left Side -->
+            <div class="space-y-6">
+                <h3 class="text-5xl font-extrabold">Deal of the day</h3>
+                <p class="text-base font-medium text-[rgba(18, 18, 18, 0.60)]">Contrary to popular belief, is not simply
+                    random text. It has roots in a piece of classical Latin
+                    literature
+                    from 45 BC, making it over 2000 years old.</p>
+            </div>
+
+            <!-- Right Side (Timing) -->
+            <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+
+                <div class="flex gap-4">
+                    <div class="flex flex-col">
+                        <span class="countdown font-extrabold text-5xl">
+                            <span style="--value:29;"></span>
+                        </span>
+                        Days
+                    </div>
+
+                    <div class="pt-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 128 512">
+                            <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                            <path
+                                d="M64 360a56 56 0 1 0 0 112 56 56 0 1 0 0-112zm0-160a56 56 0 1 0 0 112 56 56 0 1 0 0-112zM120 96A56 56 0 1 0 8 96a56 56 0 1 0 112 0z" />
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="flex gap-4">
+                    <div class="flex flex-col">
+                        <span class="countdown font-extrabold text-5xl">
+                            <span style="--value:15;"></span>
+                        </span>
+                        Hours
+                    </div>
+
+                    <div class="pt-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 128 512">
+                            <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                            <path
+                                d="M64 360a56 56 0 1 0 0 112 56 56 0 1 0 0-112zm0-160a56 56 0 1 0 0 112 56 56 0 1 0 0-112zM120 96A56 56 0 1 0 8 96a56 56 0 1 0 112 0z" />
+                        </svg>
+                    </div>
+
+                </div>
+
+
+                <div class="flex gap-4">
+                    <div class="flex flex-col">
+                        <span class="countdown font-extrabold text-5xl">
+                            <span style="--value:25;"></span>
+                        </span>
+                        Minutes
+                    </div>
+
+                    <div class="pt-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 128 512">
+                            <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                            <path
+                                d="M64 360a56 56 0 1 0 0 112 56 56 0 1 0 0-112zm0-160a56 56 0 1 0 0 112 56 56 0 1 0 0-112zM120 96A56 56 0 1 0 8 96a56 56 0 1 0 112 0z" />
+                        </svg>
+                    </div>
+                </div>
+
+
+                <div>
+                    <div class="flex flex-col">
+                        <span class="countdown font-extrabold text-5xl">
+                            <span style="--value:08;"></span>
+                        </span>
+                        Seconds
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- Deal of the Day Section Ends-->
+
+
+
+
+        <!-- Cards Section Starts -->
+        <section class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 container mx-auto gap-5 mt-10">
+
+            <!-- Card - 1 Starts-->
+
+            <div class="card bg-base-100 shadow-xl">
+
+                <!-- Card-1 Picture Starts -->
+                <figure class="px-10 pt-10">
+                    <img src="images/fruit6.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <!-- Card-1 Picture Ends -->
+
+                <!-- Card-1 Description Starts -->
+                <div class="card-body items-center text-center space-y-2">
+
+                    <h2 class="card-title text-2xl font-bold">12.90$ - 18.85$</h2>
+
+                    <hr class="bg-[rgba(18, 18, 18, 0.10)] w-1/5">
+
+                    <p class="text-base font-medium">Apples</p>
+
+                    <div class="rating">
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    </div>
+
+                    <!-- Details Starts -->
+                    <!-- Open the modal using ID.showModal() method -->
+
+                    <button class="text-orange-600" onclick="my_modal_5.showModal()">Details</button>
+
+                    <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                        <div class="modal-box">
+
+                            <!-- Description in Modal Starts -->
+                            <div class="card">
+                                <figure class="px-10 pt-10">
+                                    <img src="images/fruit6.png" alt="Shoes" class="rounded-xl" />
+                                </figure>
+
+                                <div class="card-body items-center text-center space-y-2">
+
+                                    <h2 class="card-title text-4xl font-extrabold">Apples</h2>
+                                    <p class="text-base font-medium">Professional employees are there for you to pick
+                                        the most amazing and fresh fruits.</p>
+
+
+                                    <div class="rating">
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"
+                                            checked />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Buttons in Modal Starts-->
+                            <div class="modal-action flex justify-center gap-x-5">
+                                <form method="dialog">
+                                    <!-- if there is a button in form, it will close the modal -->
+                                    <button class="btn">Close</button>
+                                </form>
+                                <button class="btn bg-[#F85559] text-white border-none">Buy Now</button>
+                            </div>
+                            <!-- Buttons in Modal Ends-->
+
+                            <!-- Description in Modal Ends -->
+                        </div>
+                    </dialog>
+                    <!-- Details Ends -->
+                </div>
+                <!-- Card-1 Description Ends -->
+
+            </div>
+
+            <!-- Card - 1 Ends -->
+
+
+            <!-- Card - 2 -->
+
+            <div class="card bg-base-100 shadow-xl">
+
+                <!-- Card-2 Picture Starts -->
+                <figure class="px-10 pt-10">
+                    <img src="images/fruit7.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <!-- Card-2 Picture Ends -->
+
+                <!-- Card-2 Description Starts -->
+                <div class="card-body items-center text-center space-y-2">
+
+                    <h2 class="card-title text-2xl font-bold">12.90$ - 18.85$</h2>
+
+                    <hr class="bg-[rgba(18, 18, 18, 0.10)] w-1/5">
+
+                    <p class="text-base font-medium">Orange</p>
+
+                    <div class="rating">
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    </div>
+
+                    <!-- Details Starts -->
+                    <!-- Open the modal using ID.showModal() method -->
+
+                    <button class="text-orange-600" onclick="my_modal_4.showModal()">Details</button>
+
+                    <dialog id="my_modal_4" class="modal modal-bottom sm:modal-middle">
+                        <div class="modal-box">
+
+                            <!-- Description in Modal Starts -->
+                            <div class="card">
+                                <figure class="px-10 pt-10">
+                                    <img src="images/fruit7.png" alt="Shoes" class="rounded-xl" />
+                                </figure>
+
+                                <div class="card-body items-center text-center space-y-2">
+
+                                    <h2 class="card-title text-4xl font-extrabold">Orange</h2>
+                                    <p class="text-base font-medium">Professional employees are there for you to pick
+                                        the most amazing and fresh fruits.</p>
+
+
+                                    <div class="rating">
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"
+                                            checked />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Buttons in Modal Starts-->
+                            <div class="modal-action flex justify-center gap-x-5">
+                                <form method="dialog">
+                                    <!-- if there is a button in form, it will close the modal -->
+                                    <button class="btn">Close</button>
+                                </form>
+                                <button class="btn bg-[#F85559] text-white border-none">Buy Now</button>
+                            </div>
+                            <!-- Buttons in Modal Ends-->
+
+                            <!-- Description in Modal Ends -->
+                        </div>
+                    </dialog>
+                    <!-- Details Ends -->
+                </div>
+                <!-- Card-2 Description Ends -->
+
+            </div>
+
+            <!-- Card - 3 -->
+
+            <div class="card bg-base-100 shadow-xl">
+
+                <!-- Card-3 Picture Starts -->
+                <figure class="px-10 pt-10">
+                    <img src="images/fruit8.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <!-- Card-3 Picture Ends -->
+
+                <!-- Card-3 Description Starts -->
+                <div class="card-body items-center text-center space-y-2">
+
+                    <h2 class="card-title text-2xl font-bold">12.90$ - 18.85$</h2>
+
+                    <hr class="bg-[rgba(18, 18, 18, 0.10)] w-1/5">
+
+                    <p class="text-base font-medium">Red Dragon</p>
+
+                    <div class="rating">
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    </div>
+
+                    <!-- Details Starts -->
+                    <!-- Open the modal using ID.showModal() method -->
+
+                    <button class="text-orange-600" onclick="my_modal_3.showModal()">Details</button>
+
+                    <dialog id="my_modal_3" class="modal modal-bottom sm:modal-middle">
+                        <div class="modal-box">
+
+                            <!-- Description in Modal Starts -->
+                            <div class="card">
+                                <figure class="px-10 pt-10">
+                                    <img src="images/fruit8.png" alt="Shoes" class="rounded-xl" />
+                                </figure>
+
+                                <div class="card-body items-center text-center space-y-2">
+
+                                    <h2 class="card-title text-4xl font-extrabold">Red Dragon</h2>
+                                    <p class="text-base font-medium">Professional employees are there for you to pick
+                                        the most amazing and fresh fruits.</p>
+
+
+                                    <div class="rating">
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"
+                                            checked />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Buttons in Modal Starts-->
+                            <div class="modal-action flex justify-center gap-x-5">
+                                <form method="dialog">
+                                    <!-- if there is a button in form, it will close the modal -->
+                                    <button class="btn">Close</button>
+                                </form>
+                                <button class="btn bg-[#F85559] text-white border-none">Buy Now</button>
+                            </div>
+                            <!-- Buttons in Modal Ends-->
+
+                            <!-- Description in Modal Ends -->
+                        </div>
+                    </dialog>
+                    <!-- Details Ends -->
+                </div>
+                <!-- Card-3 Description Ends -->
+
+            </div>
+
+
+            <!-- Card - 4 -->
+
+            <div class="card bg-base-100 shadow-xl">
+
+                <!-- Card-1 Picture Starts -->
+                <figure class="px-10 pt-10">
+                    <img src="images/fruit9.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <!-- Card-1 Picture Ends -->
+
+                <!-- Card-1 Description Starts -->
+                <div class="card-body items-center text-center space-y-2">
+
+                    <h2 class="card-title text-2xl font-bold">12.90$ - 18.85$</h2>
+
+                    <hr class="bg-[rgba(18, 18, 18, 0.10)] w-1/5">
+
+                    <p class="text-base font-medium">Banana</p>
+
+                    <div class="rating">
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    </div>
+
+                    <!-- Details Starts -->
+                    <!-- Open the modal using ID.showModal() method -->
+
+                    <button class="text-orange-600" onclick="my_modal_2.showModal()">Details</button>
+
+                    <dialog id="my_modal_2" class="modal modal-bottom sm:modal-middle">
+                        <div class="modal-box">
+
+                            <!-- Description in Modal Starts -->
+                            <div class="card">
+                                <figure class="px-10 pt-10">
+                                    <img src="images/fruit9.png" alt="Shoes" class="rounded-xl" />
+                                </figure>
+
+                                <div class="card-body items-center text-center space-y-2">
+
+                                    <h2 class="card-title text-4xl font-extrabold">Banana</h2>
+                                    <p class="text-base font-medium">Professional employees are there for you to pick
+                                        the most amazing and fresh fruits.</p>
+
+
+                                    <div class="rating">
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"
+                                            checked />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Buttons in Modal Starts-->
+                            <div class="modal-action flex justify-center gap-x-5">
+                                <form method="dialog">
+                                    <!-- if there is a button in form, it will close the modal -->
+                                    <button class="btn">Close</button>
+                                </form>
+                                <button class="btn bg-[#F85559] text-white border-none">Buy Now</button>
+                            </div>
+                            <!-- Buttons in Modal Ends-->
+
+                            <!-- Description in Modal Ends -->
+                        </div>
+                    </dialog>
+                    <!-- Details Ends -->
+                </div>
+                <!-- Card-1 Description Ends -->
+
+            </div>
+
+        </section>
+        <!-- Cards Section Ends -->
+
+        <div class="text-center mt-12 lg:mb-32 mb-10">
+            <button class="btn bg-[#F85559] text-white border-none">Shop All</button>
+        </div>
+
+
+        <!-- Meet the Team Section Starts -->
+        <section>
+
+            <div class="hero lg:h-[45rem]" style="background-image: url('images/team.png');">
+                <div class="hero-overlay bg-[rgba(18, 18, 18, 0.7)]"></div>
+
+                <div>
+                    <!-- Titles and Descriptions -->
+                    <div class="text-center">
+                        <h1 class="mb-6 text-5xl font-extrabold text-[#FFF]">Meet the team section</h1>
+                        <p class="lg:mb-20 mb-14 text-base font-medium text-[#FFF]">Contrary to popular belief, is not
+                            simply
+                            random text. It has roots in a piece
+                            of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                    </div>
+
+                    <!-- Members -->
+                    <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-7 text-center ">
+                        <!-- Member - 1 -->
+                        <div>
+                            <div class="avatar">
+                                <div class="w-24 rounded-full">
+                                    <img src="images/member1.png" />
+                                </div>
+                            </div>
+
+                            <div class="space-y-2">
+                                <h3 class="text-2xl font-bold text-white">Awlad Hossain</h3>
+                                <p class="text-base font-medium text-white">Fruits Expert</p>
+                                <div class="flex gap-6 justify-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="svg" height="1em" viewBox="0 0 512 512">
+                                        <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                        <style>
+                                            .svg {
+                                                fill: #f93e3e
+                                            }
+                                        </style>
+                                        <path
+                                            d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z " />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="svg" height="1em" viewBox="0 0 448 512">
+                                        <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                        <style>
+                                            .svg {
+                                                fill: #f93e3e
+                                            }
+                                        </style>
+                                        <path
+                                            d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM351.3 199.3v0c0 86.7-66 186.6-186.6 186.6c-37.2 0-71.7-10.8-100.7-29.4c5.3 .6 10.4 .8 15.8 .8c30.7 0 58.9-10.4 81.4-28c-28.8-.6-53-19.5-61.3-45.5c10.1 1.5 19.2 1.5 29.6-1.2c-30-6.1-52.5-32.5-52.5-64.4v-.8c8.7 4.9 18.9 7.9 29.6 8.3c-9-6-16.4-14.1-21.5-23.6s-7.8-20.2-7.7-31c0-12.2 3.2-23.4 8.9-33.1c32.3 39.8 80.8 65.8 135.2 68.6c-9.3-44.5 24-80.6 64-80.6c18.9 0 35.9 7.9 47.9 20.7c14.8-2.8 29-8.3 41.6-15.8c-4.9 15.2-15.2 28-28.8 36.1c13.2-1.4 26-5.1 37.8-10.2c-8.9 13.1-20.1 24.7-32.9 34c.2 2.8 .2 5.7 .2 8.5z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="svg" height="1em" viewBox="0 0 448 512">
+                                        <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                        <style>
+                                            .svg {
+                                                fill: #f93e3e
+                                            }
+                                        </style>
+                                        <path
+                                            d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Member - 2 -->
+                        <div>
+                            <div class="avatar">
+                                <div class="w-24 rounded-full">
+                                    <img src="images/member2.png" />
+                                </div>
+                            </div>
+
+                            <div class="space-y-2">
+                                <h3 class="text-2xl font-bold text-white">Safia Chowdhury</h3>
+                                <p class="text-base font-medium text-white">Fruits Expert</p>
+                                <div class="flex gap-6 justify-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="svg" height="1em" viewBox="0 0 512 512">
+                                        <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                        <style>
+                                            .svg {
+                                                fill: #f93e3e
+                                            }
+                                        </style>
+                                        <path
+                                            d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="svg" height="1em" viewBox="0 0 448 512">
+                                        <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                        <style>
+                                            .svg {
+                                                fill: #f93e3e
+                                            }
+                                        </style>
+                                        <path
+                                            d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM351.3 199.3v0c0 86.7-66 186.6-186.6 186.6c-37.2 0-71.7-10.8-100.7-29.4c5.3 .6 10.4 .8 15.8 .8c30.7 0 58.9-10.4 81.4-28c-28.8-.6-53-19.5-61.3-45.5c10.1 1.5 19.2 1.5 29.6-1.2c-30-6.1-52.5-32.5-52.5-64.4v-.8c8.7 4.9 18.9 7.9 29.6 8.3c-9-6-16.4-14.1-21.5-23.6s-7.8-20.2-7.7-31c0-12.2 3.2-23.4 8.9-33.1c32.3 39.8 80.8 65.8 135.2 68.6c-9.3-44.5 24-80.6 64-80.6c18.9 0 35.9 7.9 47.9 20.7c14.8-2.8 29-8.3 41.6-15.8c-4.9 15.2-15.2 28-28.8 36.1c13.2-1.4 26-5.1 37.8-10.2c-8.9 13.1-20.1 24.7-32.9 34c.2 2.8 .2 5.7 .2 8.5z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="svg" height="1em" viewBox="0 0 448 512">
+                                        <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                        <style>
+                                            .svg {
+                                                fill: #f93e3e
+                                            }
+                                        </style>
+                                        <path
+                                            d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Member - 3 -->
+                        <div>
+                            <div class="avatar">
+                                <div class="w-24 rounded-full">
+                                    <img src="images/member3.png" />
+                                </div>
+                            </div>
+
+                            <div class="space-y-2">
+                                <h3 class="text-2xl font-bold text-white">Rokib Hossain</h3>
+                                <p class="text-base font-medium text-white">Fruits Expert</p>
+                                <div class="flex gap-6 justify-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="svg" height="1em" viewBox="0 0 512 512">
+                                        <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                        <style>
+                                            .svg {
+                                                fill: #f93e3e
+                                            }
+                                        </style>
+                                        <path
+                                            d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="svg" height="1em" viewBox="0 0 448 512">
+                                        <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                        <style>
+                                            .svg {
+                                                fill: #f93e3e
+                                            }
+                                        </style>
+                                        <path
+                                            d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM351.3 199.3v0c0 86.7-66 186.6-186.6 186.6c-37.2 0-71.7-10.8-100.7-29.4c5.3 .6 10.4 .8 15.8 .8c30.7 0 58.9-10.4 81.4-28c-28.8-.6-53-19.5-61.3-45.5c10.1 1.5 19.2 1.5 29.6-1.2c-30-6.1-52.5-32.5-52.5-64.4v-.8c8.7 4.9 18.9 7.9 29.6 8.3c-9-6-16.4-14.1-21.5-23.6s-7.8-20.2-7.7-31c0-12.2 3.2-23.4 8.9-33.1c32.3 39.8 80.8 65.8 135.2 68.6c-9.3-44.5 24-80.6 64-80.6c18.9 0 35.9 7.9 47.9 20.7c14.8-2.8 29-8.3 41.6-15.8c-4.9 15.2-15.2 28-28.8 36.1c13.2-1.4 26-5.1 37.8-10.2c-8.9 13.1-20.1 24.7-32.9 34c.2 2.8 .2 5.7 .2 8.5z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="svg" height="1em" viewBox="0 0 448 512">
+                                        <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                        <style>
+                                            .svg {
+                                                fill: #f93e3e
+                                            }
+                                        </style>
+                                        <path
+                                            d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Member - 4 -->
+                        <div>
+                            <div class="avatar">
+                                <div class="w-24 rounded-full">
+                                    <img src="images/member4.png" />
+                                </div>
+                            </div>
+
+                            <div class="space-y-2">
+                                <h3 class="text-2xl font-bold text-white">Chaity</h3>
+                                <p class="text-base font-medium text-white">Fruits Expert</p>
+                                <div class="flex gap-6 justify-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="svg" height="1em" viewBox="0 0 512 512">
+                                        <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                        <style>
+                                            .svg {
+                                                fill: #f93e3e
+                                            }
+                                        </style>
+                                        <path
+                                            d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="svg" height="1em" viewBox="0 0 448 512">
+                                        <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                        <style>
+                                            .svg {
+                                                fill: #f93e3e
+                                            }
+                                        </style>
+                                        <path
+                                            d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM351.3 199.3v0c0 86.7-66 186.6-186.6 186.6c-37.2 0-71.7-10.8-100.7-29.4c5.3 .6 10.4 .8 15.8 .8c30.7 0 58.9-10.4 81.4-28c-28.8-.6-53-19.5-61.3-45.5c10.1 1.5 19.2 1.5 29.6-1.2c-30-6.1-52.5-32.5-52.5-64.4v-.8c8.7 4.9 18.9 7.9 29.6 8.3c-9-6-16.4-14.1-21.5-23.6s-7.8-20.2-7.7-31c0-12.2 3.2-23.4 8.9-33.1c32.3 39.8 80.8 65.8 135.2 68.6c-9.3-44.5 24-80.6 64-80.6c18.9 0 35.9 7.9 47.9 20.7c14.8-2.8 29-8.3 41.6-15.8c-4.9 15.2-15.2 28-28.8 36.1c13.2-1.4 26-5.1 37.8-10.2c-8.9 13.1-20.1 24.7-32.9 34c.2 2.8 .2 5.7 .2 8.5z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="svg" height="1em" viewBox="0 0 448 512">
+                                        <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                        <style>
+                                            .svg {
+                                                fill: #f93e3e
+                                            }
+                                        </style>
+                                        <path
+                                            d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- Meet the Team Section Ends -->
+
 
     </main>
 
